@@ -1,0 +1,17 @@
+.landing-page__r2 {
+  transform: translateZ(0);
+  justify-content: flex-end;
+}
+
+.landing-page__r2 {
+  padding: 0;
+}
+
+.cds--breadcrumb {
+  padding-top: 30px;
+}
+
+.cds--subgrid--wide {
+  //fix needed to keep the subgrid from scrolling horizontally
+  margin-right: 1rem;
+}

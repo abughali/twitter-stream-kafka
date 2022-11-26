@@ -1,0 +1,26 @@
+{
+  "name": "twitter-stream-kafka",
+  "version": "1.0.0",
+  "description": "Twitter Stream Kafka Start Up",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "cd server && npm run start",
+    "start:dev": "concurrently \"npm run server\" \"npm run client\" -k",
+    "client": "cd client && npm run start",
+    "server": "cd server && npm run dev",
+    "install": "cd client && npm install --legacy-peer-deps && cd ../server && npm install",
+    "build": "cd client && npm run build"
+  },
+  "author": "Mahmoud Abughali",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abughali/"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2"
+  },
+  "dependencies": {
+    "if-env": "^1.0.4"
+  }
+}

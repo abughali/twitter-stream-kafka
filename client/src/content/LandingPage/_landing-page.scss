@@ -1,0 +1,81 @@
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/type' as *;
+@use '@carbon/react/scss/breakpoint' as *;
+@use '@carbon/react/scss/theme' as *;
+@use './mixins.scss' as *;
+@use './overrides.scss';
+
+
+.landing-page-bg {
+  max-width: 80%;
+}
+
+.landing-page__banner {
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-07 * 4;
+  padding-left: $spacing-06;
+  @include landing-page-background;
+}
+
+
+.landing-page__heading {
+  @include type-style('productive-heading-05');
+}
+
+.landing-page__r2 {
+  margin-top: rem(-40px);
+}
+
+
+.tabs-group-content {
+  padding-top: 4rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.landing-page__subheading {
+  @include type-style('productive-heading-03');
+  font-weight: 600;
+}
+
+.landing-page__p {
+  @include type-style('body-long-01');
+  margin-top: $spacing-06;
+  margin-bottom: $spacing-08;
+
+  @include breakpoint-between((320px + 1), md) {
+    max-width: 75%;
+  }
+}
+
+.tabs-group {
+  background-color: $layer-01;
+}
+
+
+.landing-page__r3 {
+  padding-top: $spacing-06;
+  padding-bottom: $spacing-09;
+  padding-left: $spacing-06;
+  @include landing-page-background;
+}
+
+.landing-page__label {
+  @include type-style('heading-01');
+}
+
+
+.landing-page__banner,
+.landing-page__r2,
+.landing-page__r3 {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-bottom: $spacing-09;
+
+  @include breakpoint-down(md) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+

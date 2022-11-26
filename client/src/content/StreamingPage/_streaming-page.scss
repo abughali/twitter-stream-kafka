@@ -1,0 +1,15 @@
+@use '@carbon/react/scss/spacing' as *;
+
+.stream-page .stream-page__r1 {
+  padding: $spacing-07;
+}
+
+.btn-center {
+  padding-left: 16px;
+  width: 90px;
+}
+
+.cds--data-table-header {
+  padding: 1rem 0 0.5rem 1rem;
+  background: var(--cds-layer);
+}
